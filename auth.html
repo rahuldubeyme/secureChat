@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authentication Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--Custom CSS-->
+	<link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-md-8">
+				<div class="card my-5 shadow-lg">
+					<div class="card-body p-5">
+						<h2 class="text-center mb-4">Authentication</h2>
+						<!--Google Authentication Button-->
+						<div align="center" class="p-5">
+                            <button class="btn btn-google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                          </div>
+						<!--Divider-->
+						<div class="text-center mb-4">
+							<span class="bg-white px-3 text-muted">Or</span>
+						</div>  
+						<!--Phone Number Authentication Form-->
+						<form>
+							<div class="form-group">
+								<label for="phoneNumber">Phone Number:</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+									</div>
+									<input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-success btn-block">Send Verification Code</button>
+						</form>
+
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FontAwesome Icons-->
+	<script src="https://kit.fontawesome.com/08b170dc67.js" crossorigin="anonymous"></script>
+	<!--Bootstrap JS and jQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
