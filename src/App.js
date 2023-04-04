@@ -2,7 +2,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyButton from './components/buttonLayout';
-import navigationBar from './components/layouts/headerComponents';
+import NavigationBar from './components/layouts/headerComponents';
+import NavigationFooterBar from './components/layouts/footerComponents';
+import MainBar from './components/main/index';
+
+import AuthBar from './components/main/signup';
+
 
 
 const welcome = {
@@ -15,16 +20,23 @@ const welcome = {
 function App() {
   return (
     <div className="App">
-       
       <div className="row">
-      <div>
-      <p>
-          {welcome.describe}
-      </p>
+      <NavigationBar />
+      <div className='header'>
+        <div className='row'>
+          <div className='col-12'>
+          <MainBar />
+          
+         
+          </div>
+        </div>
+     
       </div>
-      <MyButton />
-      <navigationBar />
+     
       </div>
+      <footer>
+      
+      </footer>
     </div>
   );
 }
